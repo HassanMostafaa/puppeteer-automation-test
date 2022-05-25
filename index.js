@@ -16,6 +16,7 @@ const formatedDate = () => {
   try {
     const browser = await puppeteer.launch({
       defaultViewport: { width: 1920, height: 1080 },
+      // for debugging make headless false to see the steps of the function
       headless: true,
     });
     console.log("LOADING... This process might take a few seconds");
