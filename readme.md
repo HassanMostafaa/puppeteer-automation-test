@@ -10,3 +10,4 @@ Enters We's login page asks user for login and password and takes a screenshot f
 
 ## What Might
 - if the screenshot only the login page that means that the login credentials weren't correct
+- Right now it's only waiting 5 seconds for the account to load to take the screenshot , in case of a slow internet It might take longer than that u will have to try again and try to eliminate any thing using internet to reduce the load time
