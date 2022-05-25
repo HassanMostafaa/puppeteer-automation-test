@@ -39,13 +39,13 @@ const formatedDate = () => {
     // check for a way to wait for page to load insted of 5 seconds
     await page.waitForTimeout(5000);
     await page.screenshot({
-      path: `./screen-shots/${formatedDate()}.png`,
+      path: `./screen-shots/${landlineNum} AT ${formatedDate()}.png`,
     });
     await browser.close();
     //open screen-shots folder !
     require("child_process").exec(`explorer.exe "${path}\\screen-shots"`);
     console.log(
-      `DONE \nScreenshot saved to ./screen-shots Folder with today's date ${formatedDate()}.png`
+      `DONE \nScreenshot saved to ./screen-shots Folder with today's date ${landlineNum} AT ${formatedDate()}.png`
     );
   } catch (error) {
     console.error(error);
